@@ -1,0 +1,8 @@
+/.vscode/
+/node_modules/
+/vendor/
+
+# Environnement Info
+*.ini
+.DS_Storre
+*.swp
