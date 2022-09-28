@@ -4,7 +4,7 @@ const { response } = require("express");
 const express = require("express");
 const router = express.Router()
 
-const path = "/"
+const path = "/about"
 
 const controller = (request,response) => {
     response.render("about" , {

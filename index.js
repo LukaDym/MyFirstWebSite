@@ -32,11 +32,17 @@ app.set('view engine',"html");
 
 // Routing
 // --
-app.use("/",require("./controllers/homepage"))
-app.use("/",require("./controllers/contact"))
-app.use("/about",require("./controllers/about"))
+app.use(require("./controllers/homepage"))
+app.use(require("./controllers/contact"))
+app.use(require("./controllers/about"))
 
-
+// app.use(function(req,res) {
+//     res.status(404);
+//     res.render('404', {
+//         host: req.hostname,
+//         url: req.url
+//     })
+// })
 
 // Start server App
 // --
